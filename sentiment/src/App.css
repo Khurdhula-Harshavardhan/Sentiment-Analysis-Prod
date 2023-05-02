@@ -3,7 +3,7 @@ html, body {
   
 }
 
-h3, h2, h5 {
+h3, h2, h5, p {
   color: beige;
   font-family: monospace;
 }

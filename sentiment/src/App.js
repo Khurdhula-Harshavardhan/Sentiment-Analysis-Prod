@@ -134,6 +134,7 @@ function App() {
         </div>
               <div className="mt-4">
         <label htmlFor="display-field" style={{ color: "beige", fontFamily:"monospace" }}>Sentiment:</label>
+        <small><p>Note: The model can only classify your input into Positive or Negative class, hence even neutral comments will have to fall under these labels.</p></small>
         <div id="display-field" className="card">
           <div className="card-body">
           <ResultsDisplay data={apiData} input={input} />
