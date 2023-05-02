@@ -45,6 +45,8 @@ function App() {
   const [input, setInput] = useState("");
   const [apiData, setApiData] = useState(null);
 
+  document.title = "Sentiment Analysis"
+
   useEffect(() => {
     if (!input) {
       setApiData(null);
@@ -92,14 +94,19 @@ function App() {
 
 
   return (
-    <div style={{background: "black"}}>
+      <>
+      <head>
       <title>Sentiment</title>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="apiStyling.css" type="text/css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEFHV3NK5Dk8J+KryoMmUz5l/6en9XCp0" crossorigin="anonymous" />
-
+      </head>
+      
+    
+    <div style={{background: "black"}}>
+      
             
       <div className="center-box">
         <h3>Sentiment Detector!</h3>
@@ -138,10 +145,12 @@ function App() {
   </div>
   <footer className="app-footer">
     <p>
-      2023 Copyright &copy; Harsha Vardhan Khurdula. | <a href="https://github.com/Khurdhula-Harshavardhan/Sentiment-Analysis" target="_blank" rel="noopener noreferrer">View Source</a>
+       Copyright &copy; 2023 Harsha Vardhan Khurdula. | <a href="https://github.com/Khurdhula-Harshavardhan/Sentiment-Analysis" target="_blank" rel="noopener noreferrer">View Source</a> | <a href="https://github.com/Khurdhula-Harshavardhan/Sentiment-Analysis-Prod/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">License</a>
     </p>
   </footer>
 </div>
+</>
+
 );
 }
 
